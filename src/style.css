@@ -10,9 +10,6 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  
-  padding: 0px;
-  margin: 0px;
 }
 
 body {
@@ -58,5 +55,22 @@ body {
   background-color: cornflowerblue;
 }
 
+.sidebar__header {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sidebar__navigation  a {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+
+  text-decoration: none;
+}
+
+.sidebar__navigation ul {
+  list-style-type: none;
+  text-align: left;
+}
 
 
