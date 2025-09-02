@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  gap: 0px;
+}
 :root {
   font-family: system-ui, 'Courier New', Courier, monospace, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -112,32 +116,46 @@ body {
   grid-template-rows: repeat(2, 40%);
   row-gap: 10%;
 }
+
 .main-content__social__announcements__cards,
 .main-content__social__trending__cards {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  text-align: left;
+  margin-top: 0px;
+  gap: 0px;
   height: 100%;
   width: 90%;
   background-color: white;
   margin-bottom: 5vh;
+  overflow: auto;
 }
+
+.main-content__social__announcements__cards p,
+.main-content__social__trending__cards p{
+  margin-bottom: 0px;
+}
+
 
 .main-content__projects__cards {
   display: grid;
   width: 100%;
-  height: 100%;
+  height: 90%;
   grid-template-columns: repeat(2, 40%);
   grid-template-rows: repeat(3, 30%);
+  row-gap: 2vh;
+  column-gap: 2vw;
 }
 
 .main-content__projects__cards__card {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: white;
   margin: 2%;
   border-radius: 1rem;
+  border-left: 10px solid goldenrod;
 }
-
-
 
 .sidebar {
   display: grid;
