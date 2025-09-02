@@ -101,9 +101,24 @@ body {
   background-color: rgb(202, 206, 211);
 }
 
-.main-content__projects p {
+.main-content p {
   color: black;
   margin: 2vh;
+}
+
+.main-content__social {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 40%);
+  row-gap: 10%;
+}
+.main-content__social__announcements__cards,
+.main-content__social__trending__cards {
+  display: grid;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  margin-bottom: 5vh;
 }
 
 .main-content__projects__cards {
@@ -121,6 +136,8 @@ body {
   margin: 2%;
   border-radius: 1rem;
 }
+
+
 
 .sidebar {
   display: grid;
