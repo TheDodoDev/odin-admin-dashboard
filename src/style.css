@@ -132,9 +132,25 @@ body {
   overflow: auto;
 }
 
+.main-content__social__announcements__cards__card {
+  position: relative;
+}
+
+.main-content__social__announcements__cards__card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 10%;
+  width: 80%; /* Partial width */
+  height: 1px;
+  background-color: gray;
+  margin: -5px;
+}
+
 .main-content__social__announcements__cards p,
 .main-content__social__trending__cards p{
   margin-bottom: 0px;
+  gap: 0px;
 }
 
 
